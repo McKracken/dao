@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#"
+     xml:base="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao"
+     xmlns:dao="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#follows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#follows">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Process"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasAttribute">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Datapoint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasAttributeValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasAttributeValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Attribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasConfidence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasConfidence">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasScore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasDefaultValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasDefaultValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasInput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasOutput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasParameter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasParameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Process"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasParameterValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasParameterValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasValue"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasRange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Parameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Attribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasScore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Pattern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasSupport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasSupport">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasScore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Attribute"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#hasValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#includesInExtention -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#includesInExtention">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#matches"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Pattern"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Datapoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#isCollectionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#isCollectionOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#DataSet"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Datapoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#matches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#matches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Datapoint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Pattern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Attribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeRole"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#DataSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#DataSet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Datapoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Datapoint"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Label -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Label">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#AttributeRole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#LabelledDataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#LabelledDataset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#DataSet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#MiningProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#MiningProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#ModelligApplicationProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#ModelligApplicationProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#ModellingProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#ModellingProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Parameter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Pattern"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#PatternSet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#PatternSet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Process"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#RulePattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#RulePattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#SequencePattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#SequencePattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emanuelebastianelli/ontologies/2017/0/dao#Pattern"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
